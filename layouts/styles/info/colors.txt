@@ -1,0 +1,7 @@
+colors
+
+teal lighten-2
+green accent-2
+green accent-3
+cyan lighten-2
+indigo accent-2
