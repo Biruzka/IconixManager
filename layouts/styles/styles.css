@@ -49,3 +49,31 @@
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3);
 }
+.adv {
+  margin: auto;
+  text-align: center;
+}
+.adv__circle {
+  padding: 1em;
+  -moz-border-radius: 8em;
+  -webkit-border-radius: 8em;
+  border-radius: 8em;
+  width: 16em;
+  height: 16em;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.adv__flex {
+  display: flex;
+  justify-content: center;
+}
+.enter {
+  background-image: url(../images/business.jpg);
+}
+.enter-card-content {
+  background-color: rgba(224, 242, 241, 0.5);
+  background-position: right 30px bottom 500px;
+}
+.enter__title {
+  background-color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project-manager</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="white blue-grey darken-1">
+
+<div class="container white enter">
+    <!--заголовок страницы начало-->
+    <section class="section page-title enter__title">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <h1 class="header center page-title__title typography typography_size_z1">Добро пожаловать в Iconix Manager</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light typography typography_size_z3 page-title__title ">Прототипный подход разработки и простое документирование веб-приложений</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="row">
+        <div class="col m12">
+            <div class="row ">
+                <div class="section adv">
+                    <!--   Icon Section   -->
+                    <div class="row ">
+                        <div class="col s12 m4 adv__flex">
+                            <div class="icon-block adv__circle">
+                                <h2 class="center light-blue-text"><i class="material-icons">description</i></h2>
+                                <p class="light center header typography typography_size_z3 page-title__title ">Используйте готовые шаблоны для документации</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4 adv__flex">
+                            <div class="icon-block adv__circle">
+                                <h2 class="center light-blue-text"><i class="material-icons">web</i></h2>
+                                <p class="light center header typography typography_size_z3 page-title__title">Соедините документацию с html-прототипами</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4 adv__flex">
+                            <div class="icon-block adv__circle">
+                                <h2 class="center light-blue-text"><i class="material-icons">supervisor_account</i></h2>
+                                <p class="light center header typography typography_size_z3 page-title__title ">Взаимодействуйте с командой разработчиков</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m12">
+            <!--создание команды начало-->
+            <div class="card ">
+                <div class="card-content enter-card-content">
+                    <form class="">
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Организация</label>
+                            </div>
+                            <div class="input-field col s12 m12 l12">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Ваша почта</label>
+                            </div>
+                            <div class="input-field col s12 m12 l12">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Пароль</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-action blue-grey darken-1">
+                    <div class="row">
+                        <div class="right input-field">
+                            <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Войти в организацию</a>
+                            <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Создать организацию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--создание команды конец-->
+        </div>
+    </div>
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="actions/actions.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>
