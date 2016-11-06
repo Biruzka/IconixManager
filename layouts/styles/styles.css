@@ -4,10 +4,11 @@
   display: inline-block;
 }
 .typography_size_z1 {
-  font-size: 2.5em;
+  font-size: 2.1em;
+  color: #880e4f;
 }
 .typography_size_z2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .typography_size_z3 {
   font-size: 1.5em;

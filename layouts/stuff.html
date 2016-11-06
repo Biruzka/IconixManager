@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <h1 class="page-title__title typography typography_size_z1">Сотрудники</h1>
+            </div>
+            <div class="col l6 m6 s12">
+                <form class="">
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+
+    <!--проекты начало-->
+    <section class="section stuff">
+        <!-- Modal Trigger -->
+        <div class="row">
+            <div class="col m12 s12 l12">
+                <!-- Modal Trigger -->
+                <button data-target="modal1" class="waves-effect waves-light btn right">Пригласить сотрудника</button>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+        <ul class="collection">
+            <li class="collection-item">
+                <div>Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                </div>
+                <p>biruzka@gmail.com</p>
+            </li>
+            <li class="collection-item">
+                <div>Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                </div>
+                <p>biruzka@gmail.com</p>
+            </li>
+            <li class="collection-item">
+                <div>Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                </div>
+                <p>biruzka@gmail.com</p>
+            </li>
+
+        </ul>
+    </section>
+    <!--проекты конец-->
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="actions/actions.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>

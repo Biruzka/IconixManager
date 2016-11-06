@@ -5,3 +5,10 @@ green accent-2
 green accent-3
 cyan lighten-2
 indigo accent-2
+
+кнопки
+#880e4f pink darken-4
+мелкие кнопки
+amber darken-4
+header
+#006064 cyan darken-4
