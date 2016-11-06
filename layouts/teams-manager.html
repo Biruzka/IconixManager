@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teams</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <h1 class="page-title__title typography typography_size_z1">Команды</h1>
+            </div>
+            <div class="col l6 m6 s12">
+                <form class="">
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+
+    <!--команды начало-->
+    <section class="section teams">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <div class="card ">
+                    <div class="card-content teal lighten-5">
+                        <span class="card-title typography typography_size_z3">Неуловимые</span>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div class="row">
+                                    <div class="col s6 m6 l6">
+                                        <div class="typography typography_size_z3">
+                                            Идрисова Файруза
+                                        </div>
+                                        <p>biruzka@gmail.com</p>
+                                    </div>
+                                    <div class="col s6 m6 l6">
+                                        <p class="right">менеджер, аналитик</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action blue-grey darken-1">
+                        <div class="row">
+                            <div class="right input-field">
+                                <a class="right" href="#">Редактировать</a>
+                                <a class="right" type="submit" name="action" href="#modal-delete">Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-delete" class="modal">
+                        <div class="modal-content">
+                            <h4 class="typography typography_size_z3">Удаление команды</h4>
+                            <p>Вы хотите удалить команду: Неуловимые?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-action-btn horizontal">
+            <a class="btn-floating btn-large  pink darken-4">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating amber darken-4"><i class="material-icons">add</i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!--команды конец-->
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="actions/actions.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>

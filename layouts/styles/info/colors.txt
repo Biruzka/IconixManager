@@ -12,3 +12,4 @@ indigo accent-2
 amber darken-4
 header
 #006064 cyan darken-4
+#e0f2f1 teal lighten-5

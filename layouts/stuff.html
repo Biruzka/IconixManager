@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Stuff</title>
     <!--Import Google Icon Font-->
 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -60,45 +60,77 @@
     </section>
     <!--заголовок страницы конец-->
 
-    <!--проекты начало-->
+
+    <!--сотрудники начало-->
     <section class="section stuff">
-        <!-- Modal Trigger -->
         <div class="row">
             <div class="col m12 s12 l12">
-                <!-- Modal Trigger -->
-                <button data-target="modal1" class="waves-effect waves-light btn right">Пригласить сотрудника</button>
+                <div class="invite">
+                    <div class="input-field inline">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>
+                    <a class="waves-effect waves-light teal-text text-lighten-2" type="submit" name="action" href="#modal1"><i class="material-icons right ">send</i></a>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4 class="typography typography_size_z3">Приглашение сотрудника</h4>
+                            <p>Вы хотите пригласить нового сотрудника по почте: biruzka@gmail.com?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Пригласить</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal bottom-sheet">
-            <div class="modal-content">
-                <h4>Modal Header</h4>
-                <p>A bunch of text</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-            </div>
-        </div>
-        <ul class="collection">
+        <ul class="collection ">
             <li class="collection-item">
-                <div>Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                <div class="typography typography_size_z3">Идрисова Файруза
+                    <a class="secondary-content" type="submit" name="action" href="#modal2"><i class="material-icons">close</i></a>
+                </div>
+                <p>biruzka@gmail.com</p>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <h4 class="typography typography_size_z3">Удаление сотрудника</h4>
+                        <p>Вы хотите удалить сотрудника: Идрисова Файруза?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Удалить</a>
+                    </div>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div class="typography typography_size_z3">Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
                 </div>
                 <p>biruzka@gmail.com</p>
             </li>
             <li class="collection-item">
-                <div>Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                <div class="typography typography_size_z3">Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
                 </div>
                 <p>biruzka@gmail.com</p>
             </li>
             <li class="collection-item">
-                <div>Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                <div class="typography typography_size_z3">Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                </div>
+                <p>biruzka@gmail.com</p>
+            </li>
+            <li class="collection-item">
+                <div class="typography typography_size_z3">Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                </div>
+                <p>biruzka@gmail.com</p>
+            </li>
+            <li class="collection-item">
+                <div class="typography typography_size_z3">Идрисова Файруза<a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
                 </div>
                 <p>biruzka@gmail.com</p>
             </li>
 
         </ul>
     </section>
-    <!--проекты конец-->
+    <!--сотрудники конец-->
 </div>
 
 <!--Import jQuery before materialize.js-->
