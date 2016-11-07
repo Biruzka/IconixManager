@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project-manager</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+
+    </div>
+</nav>
+<div class="container">
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="section">
+            <a class="typography typography_size_z3" href="#!">Проекты</a>
+            <a class="typography typography_size_z2"><i class="material-icons">fast_forward</i></a>
+            <a class="typography typography_size_z3" href="#!">Проект Iconix...</a>
+            <a class="typography typography_size_z2"><i class="material-icons">fast_forward</i></a>
+            <a class="typography typography_size_z3" href="#!">Документация</a>
+        </div>
+        <div class="row">
+            <div class="col l8 m8 s12">
+                <h1 class="page-title__title typography typography_size_z1">Документация к проекту Iconix</h1>
+            </div>
+            <div class="col l4 m4 s12">
+                <form class="">
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+    <!--проект начало-->
+    <section class="section documents">
+
+        <div class="invite">
+            <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Выберите тип документации</option>
+                    <option value="1" selected>Use Cases</option>
+                    <option value="2">Тезаурус</option>
+                </select>
+                <label>Тип документации</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l8 m8 s12">
+                <h1 class="page-title__title typography typography_size_z2">Use cases:</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col m12 l12 s12">
+                <div class="card blue-grey darken-1 horizontal  task-card">
+                    <div class="card-stacked">
+                        <div class="card-content white">
+                            <span class="card-title typography typography_size_z2">№1: Создание организации</span>
+                            <div class="task-state">
+                                <div class="task-state__attribute">
+                                    <div class="task-state__title">
+                                        Важность
+                                    </div>
+                                    <div class="task-state__value">
+                                        <p>10</p>
+                                    </div>
+                                </div>
+                                <div class="task-state__attribute">
+                                    <div class="task-state__title">
+                                        Разработка
+                                    </div>
+                                    <div class="task-state__value">
+                                        Ожидание
+                                    </div>
+                                </div>
+                                <div class="task-state__attribute">
+                                    <div class="task-state__title">
+                                        Тестирование
+                                    </div>
+                                    <div class="task-state__value">
+                                        Ожидание
+                                    </div>
+                                </div>
+                                <div class="task-state__attribute">
+                                    <div class="task-state__title">
+                                        Срок сдачи
+                                    </div>
+                                    <div class="task-state__value">
+                                        20.11.2016
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action row">
+                            <div class="col m8 s6 l8">
+                                <a class="" href="#">Редактировать</a>
+                                <a class="" href="#">Настроить</a>
+                                <a class="" type="submit" name="action" href="#modal-delete-project">Удалить</a>
+                            </div>
+                           <div class="col m4 s12 l4">
+                               <a class="right" type="submit" name="action" href="#">Подробнее</a>
+                               <!--<a class="right" type="submit" name="action" href="#">Скрыть</a>-->
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-delete-project" class="modal">
+                    <div class="modal-content">
+                        <h4 class="typography typography_size_z3">Удаление проекта</h4>
+                        <p>Вы хотите удалить проект: Iconix?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Удалить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--подробно о таске-->
+        <div class="row">
+            <div class="col m12 l12 s12">
+                <div class="card blue-grey darken-1 horizontal  task-card">
+                    <div class="card-stacked">
+                        <div class="card-content white">
+                            <span class="card-title typography typography_size_z2">№1: Создание организации</span>
+                            <h3 class="typography typography_size_z3">Назначение:</h3>
+                            <p>Создание организации</p>
+                            <h3 class="typography typography_size_z3">Действующие лица:</h3>
+                            <p>Пользователь и система</p>
+                            <h3 class="typography typography_size_z3">Предусловие:</h3>
+                            <p>Пользователь на главной сстранице системы</p>
+                            <h3 class="typography typography_size_z3">Сценарий:</h3>
+                            <p>
+                                Пользователь на главной странице системы.<br>Пользователь нажимает на кнопку - создать организацию.<br> Пользователь переходит на страницу с формой заполнения.<br> Пользователь нажимает на кнопку создать.<br> Система создает организацию.<br> Пользователь на странице "Проекты".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--подробно о таске конец-->
+
+        <div class="fixed-action-btn horizontal">
+            <a class="btn-floating btn-large  pink darken-4">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating amber darken-4"><i class="material-icons">add</i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!--проект конец-->
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="actions/actions.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>

@@ -18,3 +18,6 @@ $(document).ready(function() {
 // $(document).ready(function() {
 //     Materialize.updateTextFields();
 // });
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+});
