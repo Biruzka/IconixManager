@@ -85,16 +85,22 @@
 .task-state__attribute {
   text-align: center;
   padding: 2em;
-  margin-right: 2em;
+  margin-right: 0em;
   min-width: 12em;
+}
+.task-state__title {
+  border: 1px solid #880e4f;
+  /* Параметры границы */
 }
 .task-state__value {
   min-height: 3em;
   min-width: 3em;
-  box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 .task-state__value > p {
   text-align: center;

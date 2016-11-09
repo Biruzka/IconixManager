@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <h1 class="page-title__title typography typography_size_z1">Загрузка прототипов</h1>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+
+
+    <!--загрузка начало-->
+    <div class="card ">
+        <div class="card-content teal lighten-5">
+            <form action="#">
+                <h1 class="page-title__title typography typography_size_z2">Файлы проекта:</h1>
+                <div class="file-field input-field">
+                    <a class="waves-effect waves-light btn">
+                        <i class="material-icons">system_update_alt</i>
+                        <input type="file">
+                    </a>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" value="успешно загружено">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="indeterminate"></div>
+                </div>
+            </form>
+
+
+            <div class="card ">
+                <div class="card-content white">
+                    Файловая структура в виде дерева
+                </div>
+            </div>
+
+        </div>
+        <div class="card-action blue-grey darken-1">
+            <div class="row">
+                <div class="right input-field">
+                    <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Отмена</a>
+                    <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Загурузить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--згрузкаконец-->
+
+
+
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="actions/actions.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="row">
+            <div class="col l10 m10 s6">
+                <h1 class="page-title__title typography typography_size_z1">Прототип: №1 Создание организации</h1>
+            </div>
+            <div class="col l2 m2 s6">
+                <a class="waves-effect waves-light teal-text text-lighten-2 right" type="submit" name="action" href="#modal-close"><i class="material-icons md-36">close</i></a>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+
+    <!--редактирование команды начало-->
+    <div class="section team-create">
+
+        <!--инфорация о команде начало-->
+        <div class="card ">
+            <div class="card-content teal lighten-5">
+                <span class="card-title typography typography_size_z3">О команде:</span>
+                <form class="col s12 m12 l12">
+                    <div class="row">
+                        <div class="input-field col s12 m8 l8">
+                            <input val="Неуловимые" id="first_name" type="text" class="validate">
+                            <label for="first_name">Название команды</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-action blue-grey darken-1">
+                <div class="row">
+                    <div class="right input-field">
+                        <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-save-changes-of-team" class="modal">
+                <div class="modal-content">
+                    <h4 class="typography typography_size_z3">Сохранение изменений</h4>
+                    <p>Вы хотите сохранить изменения в команде Неуловимые?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Нет</a>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Да</a>
+                </div>
+            </div>
+
+        </div>
+        <!--инфорация о команде конец-->
+
+        <!--инфорация о сотрудниках команды начало-->
+
+        <div class="card ">
+            <div class="card-content teal lighten-5">
+                <span class="card-title typography typography_size_z3">Сотрудники:</span>
+
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="invite right">
+                            <div class="input-field inline">
+                                <select>
+                                    <option value="" disabled selected>Выберите сотрудника</option>
+                                    <option value="1">Идрисова Файруза</option>
+                                    <option value="2">Прокопьев Николай</option>
+                                </select>
+                                <label>Добавление сотрудника</label>
+                            </div>
+                            <a class="waves-effect waves-light teal-text text-lighten-2" type="submit" name="action" href="#modal-add-employee"><i class="material-icons right ">add</i></a>
+                        </div>
+                        <!-- Modal Structure -->
+                        <div id="modal-add-employee" class="modal">
+                            <div class="modal-content">
+                                <h4 class="typography typography_size_z3">Добавление сотрудника</h4>
+                                <p>Вы хотите пригласить нового сотрудника Идрисова Файруза в команду Неуловимые?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Пригласить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--сотрудник-->
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <span class="card-title typography typography_size_z3">Идрисова Файруза:</span>
+                                    <p>biruzka@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="chip">
+                                    Tag
+                                    <i class="close material-icons">close</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action blue-grey darken-1">
+                            <div class="row">
+                                <a class="right" type="submit" name="action" href="#modal-add-duty">Изменить должности</a>
+                                <a class="right" type="submit" name="action" href="#modal-delete-employee-from-team">Удалить из команды</a>
+                            </div>
+                        </div>
+                        <div id="modal-delete-employee-from-team" class="modal">
+                            <div class="modal-content">
+                                <h4 class="typography typography_size_z3">Удаление сотрудника из команды</h4>
+                                <p>Вы хотите удалить сотрудника Идрисова Файруза из команды Неуловимые?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Нет</a>
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Да</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modal-delete-from-team" class="modal">
+                    <div class="modal-content">
+                        <h4 class="typography typography_size_z3">Удаление сотрудника из команды</h4>
+                        <p>Вы хотите удалить сотрудника: Идрисова Файруза?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Удалить</a>
+                    </div>
+                </div>
+
+                <div id="modal-add-duty" class="modal">
+                    <div class="modal-content">
+                        <h4 class="typography typography_size_z3">Добавить должность сотруднику</h4>
+                        <p>Изменения должностных обязанностей: Идрисова Файруза</p>
+                        <!--добавление должности-->
+                        <div class="invite">
+                            <div class="input-field">
+                                <select multiple>
+                                    <option value="" disabled selected>Выберите должность</option>
+                                    <option value="1">Менеджер</option>
+                                    <option value="2">Аналитик</option>
+                                </select>
+                                <label>Добавление должности</label>
+                            </div>
+                        </div>
+                        <!--добавление должности-->
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Отмена</a>
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--инфорация о сотрудниках команды конец-->
+
+        </section>
+        <!--редактирование команды конец-->
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="actions/actions.js"></script>
+    <script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>

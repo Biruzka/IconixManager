@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>employee-edit</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="row">
+            <div class="col l6 m6 s6">
+                <h1 class="page-title__title typography typography_size_z1">Редактирование личных данных</h1>
+            </div>
+            <div class="col l6 m6 s6">
+                <a class="waves-effect waves-light teal-text text-lighten-2 right" type="submit" name="action" href="#modal-close"><i class="material-icons md-36">close</i></a>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+
+    <!--редактирование сотрудника начало-->
+    <div class="section team-create">
+
+        <!--инфорация о сотруднике начало-->
+        <div class="card ">
+            <div class="card-content teal lighten-5">
+                <span class="card-title typography typography_size_z2">Личные данные:</span>
+                <form class="col s12 m12 l12">
+                    <div class="row">
+                        <div class="input-field col s12 m8 l8">
+                            <h3 class="card-title typography typography_size_z3">Имя:</h3>
+                            <input value="Файруза" id="first_name" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12 m8 l8">
+                            <h3 class="card-title typography typography_size_z3">Фамилия:</h3>
+                            <input value="Идрисова" id="first_name" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12 m8 l8">
+                            <h3 class="card-title typography typography_size_z3">Почта:</h3>
+                            <input value="biruzka@gmail.com" id="first_name" type="email" class="validate">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-action blue-grey darken-1">
+                <div class="row">
+                    <div class="right input-field">
+                        <a class="right" type="submit" name="action" href="#modal-save-changes-of-employee">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-save-changes-of-employee" class="modal">
+                <div class="modal-content">
+                    <h4 class="typography typography_size_z3">Сохранение изменений</h4>
+                    <p>Вы хотите сохранить новые личные данные?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Нет</a>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Да</a>
+                </div>
+            </div>
+
+            <!--если сменилась почта-->
+            <div id="modal-save-changes-of-email" class="modal">
+                <div class="modal-content">
+                    <h4 class="typography typography_size_z3">Вы попытались изменить почтовый адрес</h4>
+                    <p>На ваш новый почтовый адрес было выслано письмо подтверждения</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">ОК</a>
+                </div>
+            </div>
+            <!--если сменилась почта-->
+
+        </div>
+        <!--инфорация о сотруднике конец-->
+
+
+        <!--смена пароля начало-->
+        <div class="card ">
+            <div class="card-content teal lighten-5">
+                <span class="card-title typography typography_size_z2">Смена пароля:</span>
+                <form class="col s12 m12 l12">
+                    <div class="row">
+                        <div class="input-field col s12 m8 l8">
+                            <h3 class="card-title typography typography_size_z3">Пароль:</h3>
+                            <input id="employee_password" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12 m8 l8">
+                            <h3 class="card-title typography typography_size_z3">Новый пароль:</h3>
+                            <input id="employee_password_new" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12 m8 l8">
+                            <h3 class="card-title typography typography_size_z3">Повтор нового пароля:</h3>
+                            <input  id="employee_password_new_2" type="email" class="validate">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-action blue-grey darken-1">
+                <div class="row">
+                    <div class="right input-field">
+                        <a class="right" type="submit" name="action" href="#modal-save-changes-of-password">Изменить</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-save-changes-of-password" class="modal">
+                <div class="modal-content">
+                    <h4 class="typography typography_size_z3">Сохранение изменений</h4>
+                    <p>Вы хотите сохранить новые личные данные?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Нет</a>
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Да</a>
+                </div>
+            </div>
+
+            <!--если сменилась почта-->
+            <div id="modal-save-changes-of-email" class="modal">
+                <div class="modal-content">
+                    <h4 class="typography typography_size_z3">Вы попытались изменить почтовый адрес</h4>
+                    <p>На ваш новый почтовый адрес было выслано письмо подтверждения</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">ОК</a>
+                </div>
+            </div>
+            <!--если сменилась почта-->
+
+        </div>
+        <!--смена пароля конец-->
+
+        </section>
+        <!--редактирование команды конец-->
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="actions/actions.js"></script>
+    <script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>

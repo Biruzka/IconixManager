@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document-setting</title>
+    <!--Import Google Icon Font-->
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav class="cyan darken-4" role="navigation">
+    <div class="nav-wrapper container">
+
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+                <div class="background  cyan darken-4">
+                </div>
+                <a href="#!name"><span class="white-text name">Iconix</span></a>
+                <a href="#!name"><i class="tiny material-icons md-light right">edit</i><span class="white-text name">Идрисова Файруза</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+            </li>
+            <li><a href="#!">Проекты</a></li>
+            <li><a href="#!">Сотрудники</a></li>
+            <li><a href="#!">Команды</a></li>
+            <li><div class="divider"></div></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="show-on-large button-collapse"><i class="material-icons">menu</i></a>
+
+        <a id="logo-container" href="#" class="brand-logo right">Iconix Manager</a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--заголовок страницы начало-->
+    <section class="section page-title">
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <h1 class="page-title__title typography typography_size_z1">Настройки состояния Use Case - "№1:Создание организации"</h1>
+            </div>
+        </div>
+    </section>
+    <!--заголовок страницы конец-->
+
+    <!--редактирование проекта начало-->
+    <div class="card ">
+        <div class="card-content teal lighten-5">
+            <form class="col s12 m12 l8">
+                <div class="row">
+                    <div class="input-field col s12 m12 l12">
+                        <h3 class="typography typography_size_z3">Стадия разработки:</h3>
+                        <select>
+                            <option value="" disabled>Выберите стадию разработки</option>
+                            <option value="1">Ожидание</option>
+                            <option value="2">В процессе</option>
+                            <option value="3" selected>Сделано</option>
+                        </select>
+                    </div>
+                    <div class="input-field col s12 m12 l12">
+                        <h3 class="typography typography_size_z3">Стадия тестирования:</h3>
+                        <select>
+                            <option value="" disabled>Выберите стадию тестирования</option>
+                            <option value="1">Ожидание</option>
+                            <option value="2">Успех</option>
+                            <option value="3" selected>Неуспех</option>
+                        </select>
+                    </div>
+                    <div class="input-field col s12 m12 l12">
+                    <h3 class="typography typography_size_z3">Важность:</h3>
+                    <p class="range-field">
+                        <input type="range" id="test5" min="0" max="10" />
+                    </p>
+                        </div>
+                    <div class="input-field col s12 m12 l12">
+                    <h3 class="typography typography_size_z3">Срок сдачи:</h3>
+                    <input type="date">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="card-action blue-grey darken-1">
+            <div class="row">
+                <div class="right input-field">
+                    <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Отмена</a>
+                    <a class="right" type="submit" name="action" href="#modal-save-changes-of-team">Сохранить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--редактирование проекта конец-->
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="actions/actions.js"></script>
+<script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+</html>
